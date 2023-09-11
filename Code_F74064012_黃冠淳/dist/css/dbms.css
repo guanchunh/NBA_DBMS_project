@@ -1,0 +1,402 @@
+.header{
+    height: 12vh;
+}
+.head_contain{
+    margin-left: 40vh;
+    margin-top: 3vh;
+}
+.item{
+    font-size: 4vh;
+    margin-left: 9vh;
+}
+
+#sql{
+    position: absolute;
+    display:inline-block;
+    top: 15vh;
+    left: 75vh;
+}
+#label{
+    position: absolute;
+    display:inline-block; 
+    top: 25vh;
+    left: 55vh;
+    font-size: 3vh;
+}
+#sql_submit{
+    position: absolute;
+    top: 47vh;
+    left: 119vh;
+}
+#result{
+    position: absolute;
+    top: 50vh;
+    left: 50vh;
+    font-size: 3vh;
+}
+#output{
+    position: absolute;
+    top: 55vh;
+    left: 65vh;
+    font-size: 2vh;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    /*width: 100vh;*/
+  }
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+#method{
+    position: absolute;
+    display:inline-block; 
+    top: 15vh;
+    left: 80vh;
+    font-size: 3vh;
+}
+#method_select{
+    position: absolute;
+    display:inline-block; 
+    top: 16vh;
+    left: 100vh;
+    width: 10vh;
+}
+#table{
+    position: absolute;
+    display:inline-block; 
+    top: 23vh;
+    left: 77vh;
+    font-size: 3vh;
+}
+#table_select{
+    position: absolute;
+    display:inline-block; 
+    top: 24vh;
+    left: 100vh;
+    width: 15vh;
+}
+#table_result{
+    position: absolute;
+    top: 30vh;
+    left: 80vh;
+}
+#update_table{
+    position: absolute;
+    width: 40vh;
+    top: 35vh;
+    left: 80vh;
+}
+#btn_check{
+    position: absolute;
+    top: 60vh;
+    left: 113vh;
+    visibility: hidden;
+}
+#find_output{
+    position: absolute;
+    top: 70vh;
+    left: 78vh;
+    font-size: 2vh;
+}
+#check_update{
+    position: absolute;
+    top: 90vh;
+    left: 113vh;
+    visibility: hidden;
+}
+#query_row{
+    position: absolute;
+    top: 67vh;
+    left: 90vh;
+    visibility: hidden;
+}
+#row{
+    position: absolute;
+    top: 71vh;
+    left: 90vh;
+    visibility: hidden;
+}
+#query_submit{
+    position: absolute;
+    top: 93vh;
+    left: 107vh;
+    visibility: hidden;
+}
+#query_output{
+    position: absolute;
+    top: 123vh;
+    left: 70vh;
+}
+#output_text{
+    position: absolute;
+    top: 120vh;
+    left: 70vh;
+}
+#nest{
+    position: absolute; 
+    top: 17vh;
+    left: 80vh;
+    font-size: 2.5vh;
+}
+#exist{
+    position: absolute; 
+    top: 17vh;
+    left: 80vh;
+    font-size: 2.5vh;
+}
+#in_table{
+    position: absolute;
+    top: 23vh;
+    left: 80vh;
+}
+#exist_table{
+    position: absolute;
+    top: 23vh;
+    left: 80vh;
+}
+#nest_text{
+    position: absolute;
+    top: 28vh;
+    left: 80vh;
+}
+#exist_text{
+    position: absolute;
+    top: 28vh;
+    left: 80vh;
+}
+#nest_row{
+    position: absolute;
+    top: 31vh;
+    left: 80vh;
+}
+#exist_row{
+    position: absolute;
+    top: 31vh;
+    left: 80vh;
+}
+#where{
+    position: absolute;
+    top: 53vh;
+    left: 81vh;
+    font-size: 2vh;
+}
+#where_exist{
+    position: absolute;
+    top: 53vh;
+    left: 81vh;
+    font-size: 2vh;
+}
+#where_column{
+    position: absolute;
+    top: 53vh;
+    left: 92vh;
+}
+#exist_not{
+    position: absolute;
+    top: 53vh;
+    left: 92vh;
+}
+#in_not{
+    position: absolute;
+    top: 58vh;
+    left: 81vh;
+}
+#two{
+    position: absolute;
+    top: 63vh;
+    left: 81vh;
+}
+#two_exist{
+    position: absolute;
+    top: 58vh;
+    left: 81vh;
+}
+#two_condition{
+    position: absolute;
+    top: 67vh;
+    left: 81vh;
+}
+#exist2_condition{
+    position: absolute;
+    top: 62vh;
+    left: 81vh;
+}
+#condition_table{
+    position: absolute;
+    top: 70vh;
+    left: 81vh;
+}
+#condition2_table{
+    position: absolute;
+    top: 65vh;
+    left: 81vh;
+}
+#query_check{
+    position: absolute;
+    top: 110vh;
+    left: 110vh;
+    visibility: hidden;
+}
+#query_check2{
+    position: absolute;
+    top: 105vh;
+    left: 110vh;
+    visibility: hidden;
+}
+#in_text{
+    position: absolute;
+    top: 117vh;
+    left: 71vh; 
+}
+#exist_result{
+    position: absolute;
+    top: 112vh;
+    left: 71vh;
+}
+#in_output{
+    position: absolute;
+    top: 120vh;
+    left: 81vh; 
+}
+#exist_output{
+    position: absolute;
+    top: 115vh;
+    left: 81vh; 
+}
+
+#Aggregate{
+    position: absolute; 
+    top: 17vh;
+    left: 80vh;
+    font-size: 2.5vh;
+}
+#Aggregate_context{
+    position: absolute;
+    top: 23vh;
+    left: 80vh;
+}
+#choose{
+    position: absolute;
+    top: 29vh;
+    left: 80vh;
+}
+#Aggregate_fun{
+    position: absolute;
+    top: 34vh;
+    left: 80vh;
+}
+#Aggregate_text{
+    position: absolute;
+    top: 39vh;
+    left: 80vh;
+}
+#Aggregate_condition{
+    position: absolute;
+    top: 42vh;
+    left: 80vh;
+}
+#query_check3{
+    position: absolute;
+    top: 44vh;
+    left: 110vh;
+    visibility: hidden;
+}
+#Aggregate_result{
+    position: absolute;
+    top: 90vh;
+    left: 71vh;
+}
+#Aggregate_output{
+    position: absolute;
+    top: 95vh;
+    left: 81vh; 
+}
+#having{
+    position: absolute; 
+    top: 17vh;
+    left: 80vh;
+    font-size: 2.5vh;
+}
+#having_table{
+    position: absolute;
+    top: 23vh;
+    left: 80vh;
+}
+#choose_agg{
+    position: absolute;
+    top: 28.5vh;
+    left: 80vh;
+}
+#agg_fun{
+    position: absolute;
+    top: 33vh;
+    left: 80vh;
+}
+#agg_col{
+    position: absolute;
+    top: 38.5vh;
+    left: 80vh;
+}
+#Aggregate_col{
+    position: absolute;
+    top: 43vh;
+    left: 80vh;    
+}
+#agg_where{
+    position: absolute;
+    top: 49vh;
+    left: 80vh;   
+}
+#Aggregate_where{
+    position: absolute;
+    top: 48.5vh;
+    left: 89vh;   
+}
+#agg_group{
+    position: absolute;
+    top: 55vh;
+    left: 80vh;   
+}
+#Aggregate_group{
+    position: absolute;
+    top: 54.5vh;
+    left: 92vh;  
+}
+#having_condition{
+    position: absolute;
+    top: 61vh;
+    left: 80vh; 
+}
+#agg_having{
+    position: absolute;
+    top: 65vh;
+    left: 80vh; 
+}
+#Aggregate_having{
+    position: absolute;
+    top: 64.5vh;
+    left: 89vh; 
+}
+#query_check4{
+    position: absolute;
+    top: 72vh;
+    left: 104vh;
+}
+#having_result{
+    position: absolute;
+    top: 78vh;
+    left: 80vh;
+}
+#having_output{
+    position: absolute;
+    top: 83vh;
+    left: 80vh;    
+}

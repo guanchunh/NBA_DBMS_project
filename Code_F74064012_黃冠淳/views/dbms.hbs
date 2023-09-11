@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nba</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dbms.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    
+</head>
+
+<body>
+   
+    </div>
+      
+    <nav class="nav navbar-default header">
+        <div class="container-fluid head_contain">
+            <ul class="nav navbar-nav item">
+                <li><a data-toggle="tab" href="#menu1">SQL</a></li>
+                <li><a data-toggle="tab" href="#menu2">basic</a></li>
+                <li><a data-toggle="tab" href="#menu3">Nested_IN</a></li>
+                <li><a data-toggle="tab" href="#menu4">Nested_Exists</a></li>
+                <li><a data-toggle="tab" href="#menu5">Aggregate</a></li>
+                <li><a data-toggle="tab" href="#menu6">having</a></li>
+            </ul>
+        </div>
+    </nav>    
+        <div class="tab-content">
+            <div id="menu1" class="tab-pane fade in active">
+                    <p id="label">輸入SQL指令:</p>
+                    <textarea id="sql" name="w3review" rows="10" cols="50">
+                       
+                    </textarea> 
+                    <button id="sql_submit">確認</button>
+                    <p id="result">執行結果:</p><br>
+                    <table id="output"></table>    
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <p id="method">選擇修改方式:</p>
+                <select id="method_select">
+                    <option>方式</option>
+                    <option>查詢</option>
+                    <option>刪除</option>
+                    <option>新增</option>
+                    <option>更改</option>
+                </select>
+                <p id="table">選擇修改資料表:</p>
+                <select id="table_select">
+                    <option>資料表</option>
+                    <option>court</option>
+                    <option>game_record</option>
+                    <option>general_manager</option>
+                    <option>team</option>
+                    <option>head_coach</option>
+                    <option>player</option>
+                </select>
+                <div id="table_result"></div>
+                <table id="update_table"></table>
+                <button id="btn_check">確認</button>
+                <table id="find_output"></table>
+                <button id="check_update">確認更改</button>
+                <div id="query_row"></div>
+                <textarea id="row" rows="7" cols="20"></textarea>
+                <button id="query_submit">確認查詢</button>
+                <div id="output_text"></div>
+                <table id="query_output"></table>
+                 
+            </div>
+            <div id="menu3" class="tab-pane fade">
+                    <p id="nest">選擇查詢資料表:</p>        
+                    <select id="in_table">
+                        <option>select table</option>
+                        <option>court</option>
+                        <option>game_record</option>
+                        <option>general_manager</option>
+                        <option>head_coach</option>
+                        <option>player</option>
+                        <option>team</option>
+                    </select>
+                    <p id="nest_text">輸入要查詢的欄位:</p>
+                    <textarea id="nest_row" rows="7" cols="20"></textarea>
+                    <p id="where">WHERE</p>
+                    <select id="where_column">
+                    </select>
+                    <select id="in_not">
+                        <option>運算子</option>
+                        <option>IN</option>
+                        <option>NOT IN</option>
+                    </select>
+                    <div id="two">
+                        <select id="two_table">
+                            <option>select table</option>
+                            <option>court</option>
+                            <option>game_record</option>
+                            <option>general_manager</option>
+                            <option>head_coach</option>
+                            <option>player</option>
+                            <option>team</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <select id="two_column">
+                        </select>
+                    </div>
+                    <p id="two_condition">條件:</p>
+                    <table id="condition_table"></table>
+                    <button id="query_check">確認查詢</button>
+                    <p id="in_text"></p>
+                    <table id="in_output"></table>
+
+            </div>
+            
+            <div id="menu4" class="tab-pane fade">
+                    <p id="exist">選擇查詢資料表:</p>        
+                    <select id="exist_table">
+                        <option>select table</option>
+                        <option>court</option>
+                        <option>game_record</option>
+                        <option>general_manager</option>
+                        <option>head_coach</option>
+                        <option>player</option>
+                        <option>team</option>
+                    </select>
+                    <p id="exist_text">輸入要查詢的欄位:</p>
+                    <textarea id="exist_row" rows="7" cols="20"></textarea>
+                    <p id="where_exist">WHERE</p>
+                    <select id="exist_not">
+                        <option>運算子</option>
+                        <option>EXISTS</option>
+                        <option>NOT EXISTS</option>
+                    </select>
+                    <div id="two_exist">
+                        <select id="exist2_table">
+                            <option>select table</option>
+                            <option>court</option>
+                            <option>game_record</option>
+                            <option>general_manager</option>
+                            <option>head_coach</option>
+                            <option>player</option>
+                            <option>team</option>
+                        </select>
+                    </div>
+                    <p id="exist2_condition">條件:</p>
+                    <table id="condition2_table"></table>
+                    <button id="query_check2">確認查詢</button>
+                    <p id="exist_result"></p>
+                    <table id="exist_output"></table>
+            </div>
+            <div id="menu5" class="tab-pane fade">
+                <p id="Aggregate">選擇查詢資料表:</p> 
+                <div id="Aggregate_context">
+                    <select id="Aggregate_table">
+                        <option>select table</option>
+                        <option>court</option>
+                        <option>game_record</option>
+                        <option>general_manager</option>
+                        <option>head_coach</option>
+                        <option>player</option>
+                        <option>team</option>
+                    </select>
+                    &nbsp;&nbsp;
+                    <select id="Aggregate_column">
+                    </select> 
+                </div>
+                <p id="choose">選擇Aggregate functions:</p>
+                <select id="Aggregate_fun">
+                    <option>function</option>
+                    <option>COUNT</option>
+                    <option>SUM</option>
+                    <option>MAX</option>
+                    <option>MIN</option>
+                    <option>AVG</option>
+                </select>
+                <p id="Aggregate_text">條件:</p>
+                <table id="Aggregate_condition"></table>
+                <button id="query_check3">確認查詢</button>
+                <div id="Aggregate_out">
+                    <p id="Aggregate_result"></p>
+                    <table id="Aggregate_output"></table>
+                </div>
+
+            </div>
+            <div id="menu6" class="tab-pane fade">
+                <p id="having">選擇查詢資料表:</p> 
+                <select id="having_table">
+                    <option>select table</option>
+                    <option>court</option>
+                    <option>game_record</option>
+                    <option>general_manager</option>
+                    <option>head_coach</option>
+                    <option>player</option>
+                    <option>team</option>
+                </select>
+                <p id="choose_agg">選擇Aggregate functions:</p>
+                <select id="agg_fun">
+                    <option>function</option>
+                    <option>COUNT</option>
+                    <option>SUM</option>
+                    <option>MAX</option>
+                    <option>MIN</option>
+                    <option>AVG</option>
+                </select>
+                <p id="agg_col">選擇Aggregate 欄位:</p>
+                <select id="Aggregate_col"></select>
+                <p id="agg_where">WHERE</p>
+                <input type="text" id="Aggregate_where" >
+                <p id="agg_group">GROUP BY</p>
+                <input type="text" id="Aggregate_group" >
+                <P id="having_condition">條件:</P>
+                <p id="agg_having">HAVING</p>
+                <input type="text" id="Aggregate_having" >
+                <button id="query_check4">確認查詢</button>
+                <p id="having_result"></p>
+                <table id="having_output"></table>
+            </div>
+        </div>
+        
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./js/dbms.js"></script>
+
+</body>
+
+</html>

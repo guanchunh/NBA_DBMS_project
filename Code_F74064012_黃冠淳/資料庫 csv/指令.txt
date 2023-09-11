@@ -1,0 +1,67 @@
+CREATE TABLE court
+(
+    Cnumber integer ,
+    court_name varchar(50) ,
+    court_location varchar(50), 
+    PRIMARY KEY(Cnumber)
+);
+
+CREATE TABLE team
+(
+    Tnumber integer ,
+    team_name varchar(50) ,
+    team_alliance varchar(50) ,
+    team_champion integer ,
+    Cno integer,
+    team_group varchar(50) ,
+    PRIMARY KEY(Tnumber),
+    FOREIGN KEY (Cno) REFERENCES Court (Cnumber)
+);
+
+CREATE TABLE game_record
+(
+    GRnumber integer ,
+    win_Tnumber integer ,
+    lose_Tnumber integer ,
+    Cno integer,
+    game_date date,
+    score varchar(50) ,
+    CONSTRAINT game_record_Id PRIMARY KEY (GRnumber, win_Tnumber,lose_Tnumber),
+    FOREIGN KEY (Cno) REFERENCES Court (Cnumber),
+    FOREIGN KEY (win_Tnumber) REFERENCES team (Tnumber),
+    FOREIGN KEY (lose_Tnumber) REFERENCES team (Tnumber)
+);
+
+CREATE TABLE general_manager
+(
+    GMnumber integer ,
+    manager_name varchar(50) ,
+    manager_age integer, 
+    Tno integer, 
+    PRIMARY KEY(GMnumber),
+    FOREIGN KEY (Tno) REFERENCES team (Tnumber)
+);
+
+CREATE TABLE head_coach
+(
+    HCnumber integer ,
+    coach_name varchar(50) ,
+    coach_age integer, 
+    Tno integer, 
+    PRIMARY KEY(HCnumber),
+    FOREIGN KEY (Tno) REFERENCES team (Tnumber)
+);
+
+CREATE TABLE player
+(
+    Pnumber integer ,
+    player_name varchar(50) ,
+    PTS float,
+    REB float,
+    AST float,
+    Tno integer,
+    HCno integer,
+    PRIMARY KEY(Pnumber),
+    FOREIGN KEY (Tno) REFERENCES team (Tnumber),
+    FOREIGN KEY (HCno) REFERENCES head_coach (HCnumber)
+);
